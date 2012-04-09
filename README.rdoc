@@ -6,4 +6,5 @@ First, fork the project.
 To get the database running (MySQL) simply run
 
 bundle exec rake db:create
+
 bundle exec rake db:migrate

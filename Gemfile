@@ -8,6 +8,7 @@ gem 'rails', '3.2.1'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'omniauth-identity'
 gem 'mysql2'
+gem 'pg'
 gem 'paperclip'
 gem "state_machine"
 gem 'friendly_id'
