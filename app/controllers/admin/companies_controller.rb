@@ -12,6 +12,7 @@ class Admin::CompaniesController < AdminController
   def create
     @company = Company.new(params[:company])
     if @company.save
+      @company.enable! if params[:enable] == "true"
       redirect_to admin_companies_url
     else
       render :new
