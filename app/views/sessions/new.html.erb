@@ -1,0 +1,15 @@
+<%= form_tag '/auth/identity/callback' do %>
+  <table>
+  <tr>
+  <td class="vm home-padding">
+    <%= text_field_tag :auth_key, '', :placeholder => 'Email' %>
+  </td>
+  <td class="vm home-padding">
+    <%= text_field_tag :password, '', :placeholder => 'Password' %>
+  </td>
+  <td class="vm home-padding">
+    <%= submit_tag 'Login' %>
+  </td>
+  </tr>
+  </table>
+<% end %>

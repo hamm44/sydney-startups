@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sydney Startups</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header class="home">
+    <a href="https://github.com/jamsi/sydney-startups"><%= image_tag 'forkme.png', :class => 'forkme' %></a>
+
+    <h1>So you like Startups?</h1>
+    <h2>
+      Sydney Startups aims to feature all the best local talent from Sydney, Australia.
+    </h2>
+    <h2>
+      Browse the companies below, <%= link_to 'tell', new_company_path %> us about your startup or <a href="https://www.facebook.com/groups/sydneystartups/" target="_BLANK">join</a> the community.
+    </h2>
+
+    <div class="newsletter clearfix">
+      <h3>You can also keep up to date with our monthly newsletter</h3>
+      <form action="http://jigsawboys.us1.list-manage.com/subscribe/post?u=275ee0d80b5c3cd2206c09fb6&amp;id=f109a8af02" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </form>
+    </div>
+  </header>
+
+  <section class="companies clearfix" style="<%= "width:250px;border-radius:5px;" if controller_name == "companies" && action_name == "show" %>">
+    <ul>
+      <%= render :partial => '/companies/company', :collection => Company.where(:current_state => 'active') %>
+    </ul>
+  </section>
+
+  <section id="main" class="home">
+
+    <%= yield %>
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<%= form_for @company, :html => { :multipart => true } do |f| %>
+  <fieldset class="new_company">
+    <ul>
+      <li>
+        <%= f.label :name, 'Your Company Name' %>
+        <%= f.text_field :name, :placeholder => "Sally's Apples" %>
+      </li>
+      <li>
+        <%= f.label :description, 'Tell us a bit about what you do' %>
+        <%= f.text_area :description %>
+      </li>
+      <li>
+        <%= f.label :me, 'Your name is?' %>
+        <%= f.text_field :me, :placeholder => 'Sally' %>
+      </li>
+      <li>
+        <%= f.label :email, 'Your email is?' %>
+        <%= f.text_field :email, :placeholder => 'sally@smith.com' %>
+      </li>
+      <li>
+        <%= f.label :logo, 'Add your logo (150x150px)' %>
+        <%= f.file_field :logo %>
+      </li>
+      <li>
+        <%= f.submit 'Submit' %>
+      </li>
+    </ul>
+  </fieldset>
+<% end %>
+
+<script>
+$('#new_company').validate({
+  onkeyup: false,
+  rules: {
+		'company[name]': {
+			required: true
+		},
+		'company[me]': {
+			required: true
+		},
+		'company[email]': {
+			required: true,
+			email: true
+		},
+	},
+	errorPlacement: function() {}
+});
+</script>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  provider: MyString
+  auth_id: MyString
+  name: MyString
+  admin: false
+
+two:
+  provider: MyString
+  auth_id: MyString
+  name: MyString
+  admin: false

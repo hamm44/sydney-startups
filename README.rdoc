@@ -1,0 +1,9 @@
+== Sydneystartups.com
+I wanted to create an open sourced site powered by the love and joy that is Ruby on Rails. Combined with the ease and use of Github and we have a delightful platform to collaborate. Something not working? Dislike my HEX code choices? Fork this project and change it yourself. Then send a pull request and I'll make sure it ends up on the live version.
+== Getting started
+First, fork the project.
+
+To get the database running (MySQL) simply run
+
+bundle exec rake db:create
+bundle exec rake db:migrate

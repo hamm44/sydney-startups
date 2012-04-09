@@ -1,0 +1,225 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require reset.css
+ *= require_self
+*/
+
+body {
+  margin: 0px;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+
+.forkme {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+input[type="text"], textarea, input[type="password"], input[type="email"] {
+  background: #EFF1F1;
+  background: -webkit-gradient(linear,left top,left bottom,from(#EFF1F1),to(white));
+  background: -moz-linear-gradient(top,#EFF1F1,white);
+  background: linear-gradient(top,#EFF1F1,white);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff1f1',endColorstr='#ffffff');
+  -webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+  -moz-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+  padding: 8px;
+  font: 13px/16px Arial,sans-serif!important;
+  border: 1px solid #C1C1C1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  font-size: 16px;
+  padding: 9px 24px;
+  display: block;
+  line-height: 1.4;
+  background: #E10000;
+  background: -webkit-gradient(linear,left top,left bottom,from(#E10000),to(#A00));
+  background: -moz-linear-gradient(top,#E10000,#A00);
+  background: linear-gradient(top,#E10000,#A00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e10000',endColorstr='#aa0000');
+  border-color: #940101;
+  color: white;
+  text-shadow: 0 1px 0 #940101;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+header.home {
+  width: 960px;
+  margin: 0px auto;
+}
+
+  header.home h1 {
+    font-size: 3em;
+  }
+
+  header.home h2 {
+    color: #141414;
+    font-size: 24px;
+    line-height: 1.3em;
+    font-weight: normal;
+  }
+
+    header.home h2 a {
+      color: #5786b8;
+    }
+
+    header.home h2 a:visited {
+      color: #5786b8;
+    }
+
+  header.home h3 {
+    margin: 13px 20px 0px 0px;
+  }
+
+header.main {
+  height: 40px;
+  background-color: #D8D9D0;
+  margin-bottom: 50px;
+}
+
+  header.main h1 {
+    font-size: 1.2em;
+    margin: 0px 0px 0px 100px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  header.main h1 a {
+    color: black;
+  }
+
+.container {
+  margin: 0px auto;
+  width: 960px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+/* Homepage company listing */
+
+.companies {
+  background-color: #d8d9d0;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+
+.companies ul {
+
+}
+
+  .companies ul li {
+    float: left;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  .companies ul li:hover {
+    cursor: pointer;
+  }
+
+    .companies ul li img {
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+    }
+
+/* New company */
+
+fieldset.new_company li label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+fieldset.new_company li textarea, fieldset.new_company li input[type='text'] {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+fieldset.new_company li textarea {
+  height: 100px;
+}
+
+fieldset.new_company li input[type="submit"] {
+  margin-top: 20px;
+}
+
+fieldset.new_company li input[type="text"].error, fieldset.new_company li textarea.error {
+  border: solid 1px red;
+}
+
+/* Show company */
+
+.company {
+  width: 700px;
+  margin: 0px auto;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding: 10px 20px 20px 20px;
+}
+
+.company a.close {
+  float: right;
+}
+
+/* Newsletter */
+
+.newsletter {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newsletter h3 {
+  float: left;
+}
+
+.newsletter form {
+  float: left;
+}
+
+.newsletter form input[type='submit'] {
+  display: inline-block;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sydney Startups</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header class="main">
+    <h1><a href="/">Sydney Startups</a></h1>
+  </header>
+
+  <section id="main" class="container">
+
+    <%= yield %>
+
+  </section>
+
+</body>
+</html>
