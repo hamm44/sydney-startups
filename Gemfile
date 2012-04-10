@@ -9,8 +9,9 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'omniauth-identity'
 gem 'mysql2'
 gem 'pg'
-gem 'paperclip'
+gem 'aws-sdk'
 gem 'aws-s3'
+gem 'paperclip'
 gem "state_machine"
 gem 'friendly_id'
 
