@@ -34,4 +34,9 @@ SydneyStartups::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  PAPERCLIP_STORAGE_OPTIONS = {
+    :path => ':rails_root/public/assets/:attachment/:id/:style/:filename',
+    :url => '/assets/:attachment/:id/:style/:filename'
+  }
 end

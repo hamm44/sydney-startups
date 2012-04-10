@@ -10,6 +10,7 @@ gem 'omniauth-identity'
 gem 'mysql2'
 gem 'pg'
 gem 'paperclip'
+gem 'aws-s3'
 gem "state_machine"
 gem 'friendly_id'
 
