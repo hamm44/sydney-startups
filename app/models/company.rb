@@ -1,6 +1,6 @@
 class Company < ActiveRecord::Base
   has_attached_file :logo, {
-    :styles => { :thumb => "100x100>" }
+    :styles => { :thumb => '150x150>' }
   }.merge(PAPERCLIP_STORAGE_OPTIONS)
 
   extend FriendlyId
